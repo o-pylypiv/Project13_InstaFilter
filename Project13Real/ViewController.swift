@@ -85,7 +85,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // make sure we have a valid image
         guard currentImage != nil else {return}
         
-        // safely read the alrt action's title
+        // safely read the alret action's title
         guard let actionTitle = action.title else {return}
         
         currentFilter = CIFilter(name: actionTitle)
